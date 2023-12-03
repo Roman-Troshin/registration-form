@@ -51,8 +51,8 @@ export const App = () => {
 
 	const onRepeatedPasswordChange = ({ target }) => {
 		updateRegistrationInfo(target.name, target.value);
-
-		if (!isButtonDisabled && isAllButtonsFulled) {
+		console.log(!isButtonDisabled, isAllButtonsFulled);
+		if (!isButtonDisabled && isAllButtonsFulled && password.length === target.value.length) {
 			submitButtonRef.current.focus();
 		}
 	};
