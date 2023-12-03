@@ -1,0 +1,13 @@
+.container {
+	width: 670px;
+	margin: auto;
+}
+
+.errorLabel {
+	font-size: medium;
+	background-color: rgba(235, 43, 43, 0.555);
+}
+
+button:focus {
+	border: 2px solid black;
+}
